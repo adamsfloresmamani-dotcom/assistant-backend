@@ -7,14 +7,14 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def plan_day(request_text):
     prompt = f"""
-    Actúa como un asistente personal.
+    Actúa como un asistente personal experto.
     Organiza y reprograma el día según este pedido:
     "{request_text}"
 
     Reglas:
     - Si hay imprevistos, reacomoda el día.
     - Si falta tiempo, elimina actividades de baja prioridad.
-    - Responde en un texto corto con el plan del día.
+    - Sé claro y directo.
     """
 
     result = client.chat.completions.create(

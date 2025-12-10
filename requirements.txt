@@ -1,6 +1,5 @@
-flask
+Flask
 python-dotenv
-openai
+openai==1.51.0
 flask-cors
-gunicorn
 requests
